@@ -3,6 +3,7 @@ from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 import database,models,schemas
 from hashing import Hash
+import bcrypt
 router = APIRouter(
     prefix='/user',
     tags=['Users']
